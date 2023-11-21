@@ -32,38 +32,38 @@ export const styles = StyleSheet.create({
       maxWidth: 960,
       marginHorizontal: "auto",
     },
-    // card: {
-    //   backgroundColor: '#fff',
-    //   borderRadius: 10,
-    //   padding: 15,
-    //   margin: 10,
-    //   elevation: 3,
-    //   width: 300, // Definindo largura fixa para o card
-    //   height: 200, // Definindo altura fixa para o card
-    // },
-    barContainer: {
-      flexDirection: 'row',
-      flex: 1,
-      justifyContent: 'space-between',
-    },
-    bar: {
-      flexDirection: 'column',
-      alignItems: 'center',
-    },
-    barFill: {
-      width: 20,
-    },
-    barText: {
-      color: '#fff',
-      fontSize: 12,
-      fontWeight: 'bold',
-      alignSelf: 'center',
-    },
-    legend: {
-      marginTop: 5,
-      fontSize: 10,
-      color: 'gray',
-    },
+    card2: {
+    backgroundColor: '#fff',
+    borderRadius: 10,
+    padding: 15,
+    margin: 10,
+    elevation: 3,
+    width: 300, // Definindo largura fixa para o card
+    height: 200, // Definindo altura fixa para o card
+  },
+  barContainer: {
+    flexDirection: 'row',
+    flex: 1,
+    justifyContent: 'space-between',
+  },
+  bar: {
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  barFill: {
+    width: 20,
+  },
+  barText: {
+    color: '#fff',
+    fontSize: 12,
+    fontWeight: 'bold',
+    alignSelf: 'center',
+  },
+  legend: {
+    marginTop: 5,
+    fontSize: 10,
+    color: 'gray',
+  },
     button: {
       backgroundColor: Colors[Theme][2],
       padding: 16,

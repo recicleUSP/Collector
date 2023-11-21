@@ -124,7 +124,7 @@ export const CardHome = ({ tipo, caixas, coleta, endereco, observacao, peso, sac
               </TextIcon>
               <View style={Style.buttonGreey}>
                 <TouchableOpacity style={Style.button2} onPress={() => navigation.navigate('Chat', { userId: id, userPhotoUrl: foto, userName: nome })}>
-                  <MaterialCommunityIcons name="chat" size={25} color="white" />
+                  <MaterialCommunityIcons name="chat" size={25} color={Colors[Theme][2]} />
                   <Text style={Style.text}>Chat</Text>
                 </TouchableOpacity>
               </View>
