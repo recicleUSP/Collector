@@ -5,6 +5,7 @@ const Stack = createNativeStackNavigator();
 
 import { Home } from '../screens/home';
 import { Mapa } from '../screens/map';
+import { ChatScreen } from '../screens/chat';
 
 function StackCollection() {
   return (
@@ -18,6 +19,11 @@ function StackCollection() {
         <Stack.Screen 
           name="Mapa" 
           component={Mapa} 
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen 
+          name="Chat" 
+          component={ChatScreen} 
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

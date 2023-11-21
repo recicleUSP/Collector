@@ -22,6 +22,6 @@ const App = () => {
   );
 };
 
-// AppRegistry.registerComponent('RECICLE++', () => App);
+//AppRegistry.registerComponent('RECICLE++', () => App);
 
 export default App;

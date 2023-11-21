@@ -16,7 +16,6 @@ import { useContext } from "react";
 // }
 import { SizedBox } from 'sizedbox';
 import { ColetorContext } from "../../contexts/coletor/context";
-import { PieChart } from 'react-native-chart-kit';
 import { ImageCircleIcon } from "../../components/images";
 import {useState, useEffect} from 'react';
 import { useNavigation } from '@react-navigation/native';
@@ -187,15 +186,6 @@ export function Home({}) {
       coletorDispach({type: Types.UPDATE, data: {...coletorState, photoUrl: error}, dispatch: coletorDispach, cb:updateCB});
     }
   }
-  
-  const chartConfig = {
-    backgroundColor: '#ffffff',
-    backgroundGradientFrom: '#ffffff',
-    backgroundGradientTo: '#ffffff',
-    decimalPlaces: 2,
-    color: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
-    labelColor: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
-  };
 
   return (
     <ScrollView>
@@ -218,17 +208,6 @@ export function Home({}) {
         </View>
        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
     <View>
-      <PieChart
-        data={data2}
-        width={350}
-        height={250}
-        chartConfig={chartConfig}
-        accessor="population"
-        backgroundColor="transparent"
-        paddingLeft="20"
-        center={[10, 0]}
-        hasLegend={true}
-      />
     </View>
         </View>
        <SizedBox vertical={2} />

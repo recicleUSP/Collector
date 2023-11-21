@@ -37,13 +37,13 @@ function Map() {
       console.log('Permission to access location was denied');
     }
 
-    let location = await Location.getCurrentPositionAsync({});
-    // setLocation({
-    //   latitude: location.coords.latitude,
-    //   longitude: location.coords.longitude,
-    //   latitudeDelta: 0.015,
-    //   longitudeDelta: 0.0121,
-    // });
+    //let location = await Location.getCurrentPositionAsync({});
+     setLocation({
+       latitude: location.coords.latitude,
+       longitude: location.coords.longitude,
+       latitudeDelta: 0.015,
+       longitudeDelta: 0.0121,
+     });
   };
 
   function callbackError(error) {
